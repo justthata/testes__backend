@@ -11,11 +11,11 @@ class Cliente{
     public function __construct($nome= "", $email="", $codCliente = ""){
         $this->nome = $nome;
         $this->email = $email;
-        $this->codCliente = $codcliente;
+        $this->codCliente = $codCliente;
 
     }
 
-    public function validarCampos(){
+    public function validaCampos(){
         if(empty($this->nome) || empty($this->email) || empty($this->codCliente)){
             return false;
 
